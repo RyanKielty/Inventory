@@ -24,8 +24,7 @@ public class Main {
 
 
 //Add an item to inventory
-// * two worded items ??
-// * after - System.out.println("\nWhat will be the initial quantity: \n"); - if invalid qty, loop around to question
+// 
             if (option.equals("1")) {
                 System.out.println("\nWhat item would you like to add to inventory\n");
                 String inventory = scanner.nextLine();
@@ -36,7 +35,7 @@ public class Main {
 //
 
 //Receive quantity
-//* negative quantity
+//
             } else if (option.equals("2")) {
                 System.out.println("\nWhich item would you like to change?\n");
                 int list = Integer.parseInt(scanner.nextLine());
@@ -47,7 +46,7 @@ public class Main {
 //
 
 //Issue quantity
-//* negative quantity
+//
             } else if (option.equals("3")) {
                 System.out.println("\nWhich item would you like to issued: \n");
                 int list = Integer.parseInt(scanner.nextLine());
