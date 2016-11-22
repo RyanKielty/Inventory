@@ -16,7 +16,7 @@ public class Main {
             int i =1;
             for (InventoryItem inventory : onhand) {
                 String qty =  " : " + inventory.quantity;
-                System.out.println(i + ") " + inventory.inventory +  qty + "\n");
+                System.out.println("[" + i + "] " + inventory.inventory +  qty + "\n");
                 i=i+1;
             }
             System.out.println("\nInventory Options:\n\n[1] Add a new item for inventory\n[2] Remove an inventory item\n[3] Add quantity to inventory item\n[4] Remove quantity inventory item\n");
@@ -54,7 +54,7 @@ public class Main {
 //Issue quantity
 //*negative quantity
             } else if (option.equals("4")) {
-                System.out.println("\nWhich item number would you like to issued: \n");
+                System.out.println("\nWhich item number would you like to remove: \n");
                 int list = Integer.parseInt(scanner.nextLine());
                 InventoryItem item = onhand.get(list-1);
                 System.out.println("\nAmount to be removed:\n");
